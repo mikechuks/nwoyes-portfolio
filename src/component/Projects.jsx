@@ -20,7 +20,7 @@ const Projects = () => {
   if (!categories.length || !projects.length) {
     return (
       <section className="bg-[#0f172a] text-white px-6 md:px-20 py-16 text-center">
-        Loading Projects...
+        
       </section>
     );
   }

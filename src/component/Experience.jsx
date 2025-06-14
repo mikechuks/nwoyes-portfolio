@@ -13,7 +13,7 @@ const Experience = () => {
   }, []);
 
   if (!experienceData) {
-    return <div className="text-center py-20 text-cyan-400">Loading...</div>;
+    return <div className="text-center py-20 text-cyan-400"></div>;
   }
 
   return (

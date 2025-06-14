@@ -3,6 +3,10 @@ import headImg from "../assets/HImage-1718927757771.jpg"
 import expIfi from "../assets/comImg-1718930451388.png"
 import expXper from "../assets/comImg-1719700257920.png"
 import expDigital from "../assets/comImg-1719700523795.png"
+import screenshot1 from "../assets/Screenshot(24).png"
+import screenshot2 from "../assets/Screenshot(25).png"
+import screenshot3 from "../assets/Screenshot(26).png"
+import screenshot4 from "../assets/Screenshot(27).png"
 
 export const fetchMenuLinks = () => {
     return new Promise((resolve) => {
@@ -88,7 +92,7 @@ export const fetchMenuLinks = () => {
 export const fetchProjectCategories = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(["All", "UI", "UX", "Web Design"]);
+      resolve(["All", "Admin Web App", "Portfolio Web App", "Eccommerse Web App"]);
     }, 500);
   });
 };
@@ -99,21 +103,27 @@ export const fetchProjects = () => {
       resolve([
         {
           id: 1,
-          title: "UI/UX Design",
-          category: "UI",
-          image: "/project-1.png",
+          title: "Admin Web App",
+          category: "Admin Web App",
+          image: screenshot2,
         },
         {
           id: 2,
-          title: "Web Design",
-          category: "Web Design",
-          image: "/project-2.png",
+          title: "Portfolio Web App",
+          category: "Portfolio Web App",
+          image: screenshot3,
         },
         {
           id: 3,
-          title: "Mobile App",
-          category: "UX",
-          image: "/project-3.png",
+          title: "Portfolio Web App",
+          category: "Portfolio Web App",
+          image: screenshot4,
+        },
+                {
+          id: 4,
+          title: "Eccommerse Web App",
+          category: "Eccommerse Web App",
+          image: screenshot1,
         },
       ]);
     }, 500);

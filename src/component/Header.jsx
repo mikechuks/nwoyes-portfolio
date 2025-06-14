@@ -10,7 +10,7 @@ const Header = () => {
     fetchHeaderData().then((data) => setHeaderData(data));
   }, []);
 
-  if (!headerData) return <div className="text-center py-10">Loading...</div>;
+  if (!headerData) return <div className="text-center py-10"></div>;
 
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16">
